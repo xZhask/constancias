@@ -1,19 +1,56 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
 }
-img{
+
+body {
+    font-family: serif;
+}
+
+.imgTop {
     margin-top: -10mm;
+    width: 150px;
 }
-h3{
+
+h3 {
     text-align: center;
     font-size: 15px;
+    margin-bottom: 8mm;
 }
-p,ol{
+
+p,
+ol {
     font-size: 12px;
-    margin: 0 15mm;
+    margin: 0 10mm;
     text-align: justify;
     line-height: 6mm;
+    margin-top: 15px;
+}
+
+ol {
+    font-size: 11px;
+}
+
+table {
+    font-size: 12px;
+    margin: 0 10mm;
+    margin-top: 5mm;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.firma {
+    width: 300px;
+    float: right;
+    margin-right: 15mm;
+    margin-top: 10mm;
+}
+
+table td,
+table th {
+    padding: 3px 10px;
 }
