@@ -20,7 +20,8 @@ function generarPdf($ipress, $participantes)
     $mpdf->showImageErrors = true;
     $mpdf->WriteHTML($css, \Mpdf\HTMLParserMode::HEADER_CSS);
     $mpdf->WriteHTML($plantilla, \Mpdf\HTMLParserMode::HTML_BODY);
-
-    $mpdf->Output('../PDF/' . $ipress . '.pdf', 'F');
+    //mkdir('../PDF/' . $ipress, 0777);
+    //$mpdf->Output('../PDF/' . $ipress . '/3-' . $ipress . '.pdf', 'F');
+    $mpdf->Output('../PDF/3-' . $ipress . '.pdf', 'F');
     //I:mostrar, D: Descargar, F: guardar ruta Local
 }

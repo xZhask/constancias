@@ -5,7 +5,7 @@ require 'generarPDF.php';
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$ruta = 'Asistencia2.xlsx';
+$ruta = 'Asistencia3.xlsx';
 $documento = IOFactory::load(($ruta));
 $hojaActual = $documento->getSheet(0);
 
@@ -32,27 +32,6 @@ for ($i = 2; $i <= $ultimaFila; $i++) {
     }
 }
 
-/* $ipress = 'HOSPITAL PNP MIAU';
-$arr = [['REMIAU', 'CESAR JOSUE SILVA AGUILAR'], ['MIAU', 'KERLY BAUTISTA SANCHEZ']];
-generarPdf($ipress, $arr); */
-
-
 foreach ($participantes as $key => $value) {
-    /* echo $value['ipress'];
-    echo '<br>';
-    $arrParticipantes = $value['participantes'];
-    foreach ($arrParticipantes as $k => $v) {
-        echo $v['grado'] . ' ' . $v['nombre'];
-        echo '<br>';
-    }
-    echo '<br>';
-    echo '<br>'; */
     generarPdf($value['ipress'], $value['participantes']);
 }
-
-
-
-
-
-
-//echo json_encode($participantes);

@@ -4,8 +4,8 @@ require_once '../../../App/model/clsPersona.php'; */
 
 function getPlantilla($ipress, $participantes)
 {
-    $ot = 'Nº 05-2023-DIRSAPOL/OFIGCS UNIINSAN.AREEST del 13JUL2023.';
-    $fechaCap = '14 de julio de 2023';
+    $ot = 'Nº 07-2023-DIRSAPOL/OFIGCS UNIINSAN.AREEST del 12OCT2023.';
+    $fechaCap = '13 de octubre de 2023';
     $fechaAct = '23 de octubre de 2023';
     $plantilla = '<body>';
     $plantilla .= '<img class="imgTop" src="resources/imgHeader.png"/>';
